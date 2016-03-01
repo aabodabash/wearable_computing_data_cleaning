@@ -72,7 +72,7 @@ So, after reading the datasets descriptions [here](http://archive.ics.uci.edu/ml
  .. An identifier of the subject who carried out the experiment.  
 
 So, lets take Inertial sensor data out, while have records for all activities mean-ed and sd in the second division, So the second step to define our variables , whichs the volunteer ID (subject), activity ID, and feathers (different measurements), so what shall I do to reach there ? we've to melt all of these in one file at the end, again as per our scope defined on UCI site, we summarized required files and next step in the following diagram:
-![datasets files taplogy](dataFilesTaplogy.JPG)
+![datasets files taplogy](datasetsTapology.JPG)
 
 There's one more file not included in the above diagram in seek of simplicity, the *Featuers_info.txt* which include descriptive labels for all 561 features measured, anyways we will cover it later.
 
@@ -163,7 +163,7 @@ write.table(secondTidyDF,"data\\TidyData.txt", row.name=FALSE) ## required as pe
 
 
 Tidy dataset generated and stored in data directory *./data/TidyData.txt* of 180 records (30 volunteers * 6 activities with 50+ variables)
-![Tidy data](tidyData.JPG)
+![Tidy data](tidyDataExample.JPG)
 
 lets review str of secondTidyDF
 
