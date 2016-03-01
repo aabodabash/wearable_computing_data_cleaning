@@ -61,14 +61,15 @@ Now, lets look at extracted files, to figure out what do we've in hand:
 ```
 
 So, after reading the datasets descriptions [here](http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions), we found that, there are Train & Test folders, 30% of volunteers conducted a Test experiment , and the remaining 70% a training experiments, for each folder they divided datasets into two separate sets:
+
 1. Inertial sensor data 
-- Raw triaxial signals from the accelerometer and gyroscope of all the trials with with participants. 
-- The labels of all the performed activities. 
+ .. Raw triaxial signals from the accelerometer and gyroscope of all the trials with with participants. 
+ .. The labels of all the performed activities. 
 
 2. Records of activity windows. Each one composed of: 
-- A 561-feature vector with time and frequency domain variables. 
-- Its associated activity label. 
-- An identifier of the subject who carried out the experiment.  
+ .. A 561-feature vector with time and frequency domain variables. 
+ .. Its associated activity label. 
+ .. An identifier of the subject who carried out the experiment.  
 
 So, lets take Inertial sensor data out, while have records for all activities mean-ed and sd in the second division, So the second step to define our variables , whichs the volunteer ID (subject), activity ID, and feathers (different measurements), so what shall I do to reach there ? we've to melt all of these in one file at the end, again as per our scope defined on UCI site, we summarized required files and next step in the following diagram:
 ![datasets files taplogy](dataFilesTaplogy.JPG)
