@@ -3,7 +3,7 @@ sapply(packages, require, character.only = TRUE)
 
 ## change the following to your working directory
 ## or comment it out, and the code will create data-raw and data directories in current wd
-setwd("C:\\Users\\aabodabash\\projects\\wearable_computing_data_cleaning")
+## setwd("C:\\Users\\aabodabash\\projects\\wearable_computing_data_cleaning")
 
 
 ## Main function
